@@ -69,7 +69,7 @@ If you're concerned you can run that command a second time and the error should 
 3. If I can run the command manually why should I still download the script you made?
 > Well, it saves your stress. Instead of typing the command and avoiding misspelled command just run my script.
 
-4. How do I now install the script?
+## 4. How do I now install the script?
 > Simple. Put the script 'optimizer_script.bat' in the same folder with your installed adb, by default it supposed to be c:/adb/platform-tools
 
 Note : You can also do this after clean flash, after complete restore app from titanium backup/migrate or from Google (Play Store).
