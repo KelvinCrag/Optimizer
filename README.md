@@ -58,21 +58,22 @@ cmd package bg-dexopt-job
 If you don't have adb installed go here (https://developer.android.com/studio/releases/platform-tools)
 
 ## F.A.Q
-1. What if I got tired waiting and stopped the whole thing?
+## 1. How do I install the script?
+> Simple. Put the script 'optimizer_script.bat' in the same folder with your installed adb, by default it supposed to be c:/adb/platform-tools
+
+2. If I can run the command manually why should I still download the script you made?
+> Well, it saves your stress. Instead of typing the command and avoiding misspelled command just run my script.
+
+3. What if I got tired waiting and stopped the whole thing?
 > Disconnecting your phone will abort the process, it is completely safe to interrupt the process.
 On non-rooted devices you might see an error like this "user 2000 nor current process has Android.permission.Update_Device_Stats"
 
-2. Is the error massage I received very bad, am I going to lose my data?
+4. Is the error massage I received very bad, am I going to lose my data?
 > The error is safe to ignore and you don't need to worry. 
 If you're concerned you can run that command a second time and the error should not occur during the second run.
 
-3. If I can run the command manually why should I still download the script you made?
-> Well, it saves your stress. Instead of typing the command and avoiding misspelled command just run my script.
 
-## 4. How do I now install the script?
-> Simple. Put the script 'optimizer_script.bat' in the same folder with your installed adb, by default it supposed to be c:/adb/platform-tools
-
-Note : You can also do this after clean flash, after complete restore app from titanium backup/migrate or from Google (Play Store).
+Note : You can also do this optimization; after clean flash, after complete restore app from titanium backup/migrate or from Google (Play Store).
 
 
 ## Curious what the code does? See here : 
