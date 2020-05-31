@@ -13,11 +13,16 @@ You can often watch how the Android system consumes energy more than other appli
 If in Android 6 and earlier optimization was forced, then starting with Android 7 and higher. A new option was added to skip this step and optimize applications on the fly (JIT, Just-In-Time) while using applications.
 At the same time, the initial optimization has not been deleted and only starts if the following conditions are met:
 
-•	the phone is connected to the charger,
-•	fully charged,
-•	turned on (the phone itself, not the screen),
-•	is not used,
-•	inactive (like after at least 30 minutes).
+• the phone is connected to the charger,
+
+• fully charged,
+
+• turned on (the phone itself, not the screen),
+
+• is not used,
+
+• inactive (like after at least 30 minutes).
+
 
 If these conditions are met, optimization begins.
 
@@ -59,7 +64,7 @@ If you don't have adb installed go here (https://developer.android.com/studio/re
 
 ## F.A.Q
 1. How do I install the script?
-> Simple. Put the script 'optimizer_script.bat' in the same folder with your installed adb, by default it supposed to be c:/adb/platform-tools
+> Simple. Put the script 'optimizer_script.bat' from releases (https://github.com/KelvinCrag/Optimizer/releases) in the same folder with your installed adb, by default it supposed to be c:/adb/platform-tools
 
 2. If I can run the command manually why should I still download the script you made?
 > Well, it saves your stress. Instead of typing the command and avoiding misspelled command just run my script.
