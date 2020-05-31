@@ -13,15 +13,15 @@ You can often watch how the Android system consumes energy more than other appli
 If in Android 6 and earlier optimization was forced, then starting with Android 7 and higher. A new option was added to skip this step and optimize applications on the fly (JIT, Just-In-Time) while using applications.
 At the same time, the initial optimization has not been deleted and only starts if the following conditions are met:
 
-• the phone is connected to the charger,
+> the phone is connected to the charger,
 
-• fully charged,
+> fully charged,
 
-• turned on (the phone itself, not the screen),
+> turned on (the phone itself, not the screen),
 
-• is not used,
+> is not used,
 
-• inactive (like after at least 30 minutes).
+> inactive (like after at least 30 minutes).
 
 
 If these conditions are met, optimization begins.
