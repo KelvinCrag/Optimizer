@@ -77,6 +77,9 @@ On non-rooted devices you might see an error like this "user 2000 nor current pr
 > The error is safe to ignore and you don't need to worry. 
 If you're concerned you can run that command a second time and the error should not occur during the second run.
 
+5. What can I expect from the Optimization measures?
+> Better battery life and performance. Idle drain would be reduced to minimal.
+
 
 Note : You can also do this optimization; after clean flash, after complete restore app from titanium backup/migrate or from Google (Play Store).
 
