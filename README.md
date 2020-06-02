@@ -63,14 +63,15 @@ cmd package bg-dexopt-job
 If you don't have adb installed go here (https://developer.android.com/studio/releases/platform-tools)
 
 ## F.A.Q
-1. How do I install the script in windows?
+
+1. How do I install the script in linux and MacOS?
+> You don't. Just manually run the command above in terminal.
+
+2. How do I install the script in windows?
 > Simple. Put the script 'optimizer_script.bat' from releases (https://github.com/KelvinCrag/Optimizer/releases) in the same folder with your installed adb, by default it supposed to be c:/adb/platform-tools
 
-2. If I can run the command manually why should I still download the script you made?
+3. If I can run the command manually why should I still download the script you made?
 > Well, it saves your stress. Instead of typing the command and avoiding misspelled command just run my script.
-
-3. How do I install the script in linux and MacOS?
-> You don't. Just manually run the command above in terminal.
 
 4. What if I got tired waiting and stopped the whole thing?
 > Disconnecting your phone will abort the process, it is completely safe to interrupt the process.
