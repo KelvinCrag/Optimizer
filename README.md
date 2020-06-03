@@ -64,10 +64,10 @@ If you don't have adb installed go here (https://developer.android.com/studio/re
 
 ## F.A.Q
 
-1. How do I install the script in linux and MacOS?
+1. How do I install the script in **linux and MacOS**?
 > You don't. Just manually run the command above in terminal.
 
-2. How do I install the script in windows?
+2. How do I install the script in **windows**?
 > Simple. Put the script 'optimizer_script.bat' from releases (https://github.com/KelvinCrag/Optimizer/releases) in the same folder with your installed adb, by default it supposed to be c:/adb/platform-tools
 
 3. If I can run the command manually why should I still download the script you made?
