@@ -6,9 +6,6 @@ Probably you have been faced with high battery consumption in the first 3-4 days
 It should be after flashing or installing updates on older versions of Android starting from 6 and below.
 You have encountered such a system dialog as "Optimizing app xx from xx"
 
-## In Android 7+, did they hide this from the user's eyes or delete it? Does this mean that the optimization has been removed?
-No, this is not such. This option was not lost, but simply postponed, and the postponement of this task causes the battery to run out. Do you think that optimization is happening in the background? The answer is not correct. It only starts under special conditions. Lack of this optimization will drain the battery. Optimization is not performed because we do not know how to fulfil the conditions necessary for its launch. The consequence of this is the accelerated discharge of the phone.
- 
 You can often watch how the Android system consumes energy more than other applications. This is the result of not allowing the system to optimize.
 If in Android 6 and earlier optimization was forced, then starting with Android 7 and higher. A new option was added to skip this step and optimize applications on the fly (JIT, Just-In-Time) while using applications.
 At the same time, the initial optimization has not been deleted and only starts if the following conditions are met:
@@ -25,9 +22,6 @@ At the same time, the initial optimization has not been deleted and only starts 
 
 
 If these conditions are met, optimization begins.
-
-## Why do we need this optimization?
-It is because application developers cannot do this for each set of hardware and each device is already. It compiles applications into the most efficient code for its processor. So just use your device and let it take care of the cache itself or help your device make full optimization with simple command.
 
 ## Quick note
 If you dirty flash a lot you might randomly experience longer app launch times after flashing a ROM and the only apparent way to fix it was to do a clean flash.
@@ -81,8 +75,15 @@ On non-rooted devices you might see an error like this "user 2000 nor current pr
 > The error is safe to ignore and you don't need to worry. 
 If you're concerned you can run that command a second time and the error should not occur during the second run.
 
-6. What can I expect from the Optimization measures?
+6. In Android 7+, did they hide this from the user's eyes or delete it? Does this mean that the optimization has been removed?
+> No, this is not such. This option was not lost, but simply postponed, and the postponement of this task causes the battery to run out. Do you think that optimization is happening in the background? The answer is not correct. It only starts under special conditions. Lack of this optimization will drain the battery. Optimization is not performed because we do not know how to fulfil the conditions necessary for its launch. The consequence of this is the accelerated discharge of the phone.
+ 
+7. What can I expect from the Optimization measures?
 > Better battery life and performance. Idle drain would be reduced to minimal.
+
+8. Why do we need this optimization?
+> It is because application developers cannot do this for each set of hardware and each device is already. It compiles applications into the most efficient code for its processor. So just use your device and let it take care of the cache itself or help your device make full optimization with simple command.
+
 
 ## Troubleshooting
 
