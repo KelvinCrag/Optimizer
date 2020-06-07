@@ -27,7 +27,7 @@ At the same time, the initial optimization has not been deleted and only starts 
 If these conditions are met, optimization begins.
 
 ## Why do we need this optimization?
-Because application developers cannot do this for each set of hardware and each device is already. It compiles applications into the most efficient code for its processor. So just use your device and let it take care of the cache itself or help your device make full optimization with simple command.
+It is because application developers cannot do this for each set of hardware and each device is already. It compiles applications into the most efficient code for its processor. So just use your device and let it take care of the cache itself or help your device make full optimization with simple command.
 
 ## Quick note
 If you dirty flash a lot you might randomly experience longer app launch times after flashing a ROM and the only apparent way to fix it was to do a clean flash.
