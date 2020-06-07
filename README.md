@@ -89,7 +89,7 @@ If you're concerned you can run that command a second time and the error should 
 
 If you get some errors like **unrecognised device** and some other follow up errors, maybe it's because you haven’t used USB debugging before.
 
-To avoid this, make sure you accept **USB debugging authorization** when it pops up in your device after running the script and re-run the script. You can also choose to tick **always allow authorization from this computer** to avoid the stress of always accepting when you feel like running this script (optimizing) or others.
+To avoid this, make sure you accept **USB debugging authorization** when it pops up in your device after running the script and then run the script again. You can also choose to tick **always allow authorization from this computer** to avoid the stress of always accepting when you feel like running this script (optimizing) or others.
 
 Note : You can also do this optimization; after clean flash, after complete restore app from titanium backup/migrate or from Google (Play Store).
 
