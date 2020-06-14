@@ -54,7 +54,7 @@ su -c "cmd package bg-dexopt-job"
 adb shell
 cmd package bg-dexopt-job
 
-If you don't have adb installed go here (https://developer.android.com/studio/releases/platform-tools)
+If you don't have adb installed go [here](https://developer.android.com/studio/releases/platform-tools)
 
 ## F.A.Q
 
@@ -62,7 +62,7 @@ If you don't have adb installed go here (https://developer.android.com/studio/re
 > You don't. Just manually run the command above in terminal.
 
 2. How do I install the script in **windows**?
-> Simple. Put the script 'optimizer_script.bat' from releases (https://github.com/KelvinCrag/Optimizer/releases) in the same folder with your installed adb, by default it supposed to be c:/adb/platform-tools
+> Simple. Put the script 'optimizer_script.bat' from [releases](https://github.com/KelvinCrag/Optimizer/releases) in the same folder with your installed adb, by default it supposed to be c:/adb/platform-tools
 
 3. If I can run the command manually why should I still download the script you made?
 > Well, it saves your stress. Instead of typing the command and avoiding misspelled command just run my script.
@@ -94,8 +94,7 @@ To avoid this, make sure you accept **USB debugging authorization** when it pops
 Note : You can also do this optimization; after clean flash, after complete restore app from titanium backup/migrate or from Google (Play Store).
 
 
-## Curious what the code does? See here : 
-https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe
+## Curious what the code does? See [here](https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe)
 
 credit : 
 - tomascus @ xda-developers
