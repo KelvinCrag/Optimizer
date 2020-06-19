@@ -12,3 +12,4 @@ adb.exe shell cmd package bg-dexopt-job
 
 echo Optimization is now finished. Press any key to exit.
 pause>nul
+exit
