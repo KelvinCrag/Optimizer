@@ -1,5 +1,8 @@
 @echo off
+
 adb devices
+echo.
+cls
 echo Optimizing apps using speed-profile. This process could take up to 20 minutes to complete. Note that disconnecting your phone during this optimization will abort the process, so kindly exercise patients.
 echo.
 echo.
