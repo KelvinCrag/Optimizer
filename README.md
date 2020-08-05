@@ -31,10 +31,12 @@ What I found fixed the issue was to manually run dex2oat on everything after it 
 
 (And it seems improve idle drain (big battery usage by system), because we're forcing doing task that only can run if some condition only, but also sometimes can unexpectedly happens while phone was idle, so it's causing huge idle drain usage)
 
-### How to:
+
+
+## How to:
 <p>
 <details>
-<summary>If you have root/magisk:</summary>
+<summary>IF YOU HAVE ROOT/MAGISK:</summary>
 
 1. Open terminal and enter the following commands (allow the terminal for root in magisk when it asked):
 
@@ -48,7 +50,9 @@ su -c "cmd package bg-dexopt-job"
 
 <p>
 <details>
-<summary>If you don't have root:</summary>
+
+
+<summary>IF YOU DON'T HAVE ROOT:</summary>
 
 > Prepping your phone - 
 
@@ -83,7 +87,9 @@ If you don't have adb installed go [here](https://developer.android.com/studio/r
 </details>
 </p>
 
-- If I can run the command manually why should I still download the script you made?
+
+## Q/A
+- If I can run the command manually why should I still download the script you made ?
 > Well, it saves your stress. Instead of typing the command and avoiding misspelled command just run my script.
 
 - What if I got tired waiting and stopped the whole thing?
@@ -107,7 +113,7 @@ If you're concerned you can run that command a second time and the error should 
 Note : You can also do this optimization; after clean flash, after complete restore app from titanium backup/migrate or from Google (Play Store).
 
 
-## Curious what the code does? See here: https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe
+### Curious what the code does? See here: https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe
 
 credit : 
 - tomascus @ xda-developers
