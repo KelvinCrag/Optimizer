@@ -32,16 +32,20 @@ What I found fixed the issue was to manually run dex2oat on everything after it 
 (And it seems improve idle drain (big battery usage by system), because we're forcing doing task that only can run if some condition only, but also sometimes can unexpectedly happens while phone was idle, so it's causing huge idle drain usage)
 
 ### How to:
-
-## If you have root/magisk:
+<p>
+<details>
+<summary>If you have root/magisk:</summary>
 1. Open terminal and enter the following commands (allow the terminal for root in magisk when it asked):
 
 su -c "cmd package bg-dexopt-job"
 
 2. Just wait until it completed by itself (on Android 10 will display "Success", on Nougat-Pie it just a new prompt line)
+</details>
+</p>
 
-
-## If you don't have root:
+<p>
+<details>
+<summary>If you don't have root:</summary>
 > Prepping your phone - 
 1. Navigate to settings
 2. Go to **System > About Phone > Build number**
@@ -58,43 +62,41 @@ If you don't have adb installed go [here](https://developer.android.com/studio/r
 
 ## F.A.Q
 
-1. How do I install the script in **linux and MacOS**?
+- How do I install the script in **linux and MacOS**?
 > You don't. Just manually run the command above in terminal.
 
-2. How do I install the script in **windows**?
+- How do I install the script in **windows**?
 > Simple. Put the script 'optimizer_script.bat' from [releases](https://github.com/KelvinCrag/Optimizer/releases) in the same folder with your installed adb, by default it supposed to be c:/adb/platform-tools
+</details>
+</p>
 
-3. If I can run the command manually why should I still download the script you made?
+## F.A.Q
+
+- If I can run the command manually why should I still download the script you made?
 > Well, it saves your stress. Instead of typing the command and avoiding misspelled command just run my script.
 
-4. What if I got tired waiting and stopped the whole thing?
+- What if I got tired waiting and stopped the whole thing?
 > Disconnecting your phone will abort the process, it is completely safe to interrupt the process.
 On non-rooted devices you might see an error like this "user 2000 nor current process has Android.permission.Update_Device_Stats"
 
-5. Is the error massage I received very bad, am I going to lose my data?
+- Is the error massage I received very bad, am I going to lose my data?
 > The error is safe to ignore and you don't need to worry. 
 If you're concerned you can run that command a second time and the error should not occur during the second run.
 
-6. In Android 7+, did they hide this from the user's eyes or delete it? Does this mean that the optimization has been removed?
+- In Android 7+, did they hide this from the user's eyes or delete it? Does this mean that the optimization has been removed?
 > No, this is not such. This option was not lost, but simply postponed, and the postponement of this task causes the battery to run out. Do you think that optimization is happening in the background? The answer is not correct. It only starts under special conditions. Lack of this optimization will drain the battery. Optimization is not performed because we do not know how to fulfil the conditions necessary for its launch. The consequence of this is the accelerated discharge of the phone.
  
-7. What can I expect from the Optimization measures?
+- What can I expect from the Optimization measures?
 > Better battery life and performance. Idle drain would be reduced to minimal.
 
-8. Why do we need this optimization?
+- Why do we need this optimization?
 > It is because application developers cannot do this for each set of hardware and each device is already. It compiles applications into the most efficient code for its processor. So just use your device and let it take care of the cache itself or help your device make full optimization with simple command.
 
-
-## Troubleshooting
-
-If you get some errors like `unrecognised device` and some other follow up errors, maybe it's because you haven’t used USB debugging before.
-
-To avoid this, make sure you accept **USB debugging authorization** when it pops up in your device after running the script and then run the script again. You can also choose to tick **always allow authorization from this computer** to avoid the stress of always accepting when you feel like running this script (optimizing) or others.
 
 Note : You can also do this optimization; after clean flash, after complete restore app from titanium backup/migrate or from Google (Play Store).
 
 
-## Curious what the code does? See [here](https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe)
+## Curious what the code does? See here: https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe
 
 credit : 
 - tomascus @ xda-developers
