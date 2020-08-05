@@ -35,9 +35,12 @@ What I found fixed the issue was to manually run dex2oat on everything after it 
 <p>
 <details>
 <summary>If you have root/magisk:</summary>
+
 1. Open terminal and enter the following commands (allow the terminal for root in magisk when it asked):
 
+
 su -c "cmd package bg-dexopt-job"
+
 
 2. Just wait until it completed by itself (on Android 10 will display "Success", on Nougat-Pie it just a new prompt line)
 </details>
@@ -46,17 +49,27 @@ su -c "cmd package bg-dexopt-job"
 <p>
 <details>
 <summary>If you don't have root:</summary>
+
 > Prepping your phone - 
+
 1. Navigate to settings
+
 2. Go to **System > About Phone > Build number**
+
 3. Tap on **Build Number** 7 times or until you see the *You are now a developer* toast message.
+
 4. Now, Go back to **System > Advanced > Developer options > Enable USB Debugging**
+
 5. Once enabled, Go to your PC
 
+
 > Running command -
+
 1. On your computer, enter the following commands in a console/terminal window:
+
 adb shell
 cmd package bg-dexopt-job
+
 
 If you don't have adb installed go [here](https://developer.android.com/studio/releases/platform-tools)
 
