@@ -83,8 +83,6 @@ If you don't have adb installed go [here](https://developer.android.com/studio/r
 </details>
 </p>
 
-## F.A.Q
-
 - If I can run the command manually why should I still download the script you made?
 > Well, it saves your stress. Instead of typing the command and avoiding misspelled command just run my script.
 
