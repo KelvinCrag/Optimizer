@@ -37,7 +37,7 @@ What I found fixed the issue was to manually run dex2oat on everything after it 
 
 1. Open terminal and enter the following commands (allow the terminal for root in magisk when it asked):
 
-su -c "cmd package bg-dexopt-job"
+`su -c "cmd package bg-dexopt-job"`
 
 2. Just wait until it completed by itself (on Android 10 will display "Success", on Nougat-Pie it just a new prompt line)
 
@@ -54,7 +54,7 @@ su -c "cmd package bg-dexopt-job"
 1. On your computer, enter the following commands in a console/terminal window:
 
 adb shell
-cmd package bg-dexopt-job
+`cmd package bg-dexopt-job`
 
 If you don't have adb installed go [here](https://developer.android.com/studio/releases/platform-tools)
 
