@@ -53,8 +53,7 @@ What I found fixed the issue was to manually run dex2oat on everything after it 
 > Running command -
 1. On your computer, enter the following commands in a console/terminal window:
 
-adb shell
-`cmd package bg-dexopt-job`
+`adb shell cmd package bg-dexopt-job`
 
 If you don't have adb installed go [here](https://developer.android.com/studio/releases/platform-tools)
 
