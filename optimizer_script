@@ -50,16 +50,19 @@ for /F "delims=" %%a in ('adb.exe shell getprop ro.build.id') do set ID=%%a
 echo %NL%Detected: %DEVICE% (%PRODUCT%)
 echo Firmware: %ID%
 
-echo %NL%Optimizing using speed-profile. The time taken for this process to get completed is dependent on the amount of apps and SoC present in your device. Recent phones can complete this job under 5 mins while older mid range might take 15-20 mins. %NL%Note that disconnecting your device during this optimization will abort the process.
+echo %NL%Optimizing using speed-profile. The time taken for this process to get completed is dependent on the amount of apps and SoC present in your device. Recent phones can complete this job under 5 mins while older mid range might take 15-20 mins%NL%Note that disconnecting your device during this optimization will abort the process
 
 echo.
 pause
 cls
 
 echo %NL%This is an automated process just wait until it's completed by itself%NL%(on Android 10 will display "Success", on Nougat-Pie it just a new prompt line). . .
-
 adb.exe shell cmd package bg-dexopt-job
 
-echo Optimization is now finished. %NL%Anytime you clean flash, complete restore apps from titanium backup/migrate or from Google (Play Store) and you face battery drain or lags, You may choose to open the script back and run this command. %NL%Press any key to exit.
+echo %NL%Optimization is now finished!
+
+echo %NL%Anytime you clean flash, complete restore apps from titanium backup/migrate or from Google (Play Store) and you face battery drain or lags, You may choose to open the script back and run this command
+
+echo%NL%Press any key to exit. . .
 pause>nul
 exit
