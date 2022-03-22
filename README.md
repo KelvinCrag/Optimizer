@@ -5,7 +5,7 @@ Fix your android battery drain by optimization.
 When you updated or flashed your device, you probably used up a lot of battery power in the first three or four days. The Android system is the first in the list of systems consumed and has 30–40% of the use! This guide will help to eliminate this problem. Starting with Android version 6 and below, you should have seen a message from the system saying "Optimizing app xx from xx" when you flashed or installed new apps.
 
 You can often watch how the Android system consumes energy more than other applications. This is the result of not allowing the system to optimize.
-If optimization was forced in Android 6 and earlier, it will be optional starting with Android 7 and higher. A new option was added to skip this step and optimise applications on the fly (JIT, Just-In-Time) while using applications.
+Because optimization was forced in Android 6 and earlier, and it became optional starting with Android 7 and higher, a new option was added to skip this step and optimise applications on the fly (JIT, Just-In-Time) while using applications.
 At the same time, the initial optimization has not been deleted and only starts if the following conditions are met:
 
 > the phone is connected to the charger,
@@ -27,11 +27,11 @@ And it seems to improve idle drain (high battery usage by the system) because we
 
 ## If you have root/magisk:
 
-1. Open a terminal and enter the following commands (allow the terminal for root in magisk when it asked):
+1. Open a terminal (e.g termux or terminal on playstore) and enter the following commands (allow the terminal for root in magisk when it asked):
 
 `su -c "cmd package bg-dexopt-job"`
 
-2. Just wait until it is completed by itself (on Android 10 will display "Success", on Nougat-Pie it is just a new prompt line)
+2. Just wait until it is completed by itself (on Android 10+ will display "Success", on Nougat-Pie it will bring just a new prompt line)
 
 ## If you don't have root:
 
@@ -42,7 +42,7 @@ And it seems to improve idle drain (high battery usage by the system) because we
 4. Now, Go back to **System > Advanced > Developer options > Enable USB Debugging**
 5. Once enabled, Go to your PC
 
-> Running command -
+> Running command without script -
 1. On your computer, enter the following commands in a console/terminal window:
 
 `adb shell cmd package bg-dexopt-job`
