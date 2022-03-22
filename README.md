@@ -2,12 +2,10 @@
 Fix your android battery drain by optimization.
 
 ## Summary
-Probably you have been faced with high battery consumption in the first 3-4 days after updating or flashing your device, the android system is the first in the list of consumption and has 30-40% of use! This guide will help to remove this problem.
-It should be after flashing or installing updates on older versions of Android starting from 6 and below.
-You have encountered such a system dialog as "Optimizing app xx from xx"
+When you updated or flashed your device, you probably used up a lot of battery power in the first three or four days.The Android system is the first in the list of systems consumed and has 30–40% of the use! This guide will help to eliminate this problem. Starting with Android version 6 and below, you should have seen a message from the system saying "Optimizing app xx from xx" when you flashed or installed new apps.
 
 You can often watch how the Android system consumes energy more than other applications. This is the result of not allowing the system to optimize.
-If in Android 6 and earlier optimization was forced, then starting with Android 7 and higher. A new option was added to skip this step and optimize applications on the fly (JIT, Just-In-Time) while using applications.
+If optimization was forced in Android 6 and earlier, it will be optional starting with Android 7 and higher.A new option was added to skip this step and optimise applications on the fly (JIT, Just-In-Time) while using applications.
 At the same time, the initial optimization has not been deleted and only starts if the following conditions are met:
 
 > the phone is connected to the charger,
@@ -23,13 +21,12 @@ At the same time, the initial optimization has not been deleted and only starts 
 
 If these conditions are met, optimization begins.
 
-## Quick note
-If you dirty flash a lot you might randomly experience longer app launch times after flashing a ROM and the only apparent way to fix it was to do a clean flash.
-I experienced this a few times and decided to investigate and saw that it had something to do with how dex2oat works after you dirty flash (it refuses to optimise properly?). 
-
-What I found fixed the issue was to manually run dex2oat on everything after it booted into the system, and after it has finished the process (could take super long depending on how many apps you have), everything went back to its speedy state.
-
-(And it seems improve idle drain (big battery usage by system), because we're forcing doing task that only can run if some condition only, but also sometimes can unexpectedly happens while phone was idle, so it's causing huge idle drain usage)
+So if you dirty flash a lot, you might randomly experience longer app launch times after flashing a ROM, and the only apparent way to fix it was to do a clean flash.
+I experienced this a few times and decided to investigate and saw that it had something to do with how dex2oat works after you dirty flash (it refuses to optimise properly). 
+ 
+What I found fixed the issue was to manually run dex2oat on everything after it booted into the system, and after it finished the process (which could take a super long time depending on how many apps you have), everything went back to its speedy state.
+ 
+And it seems to improve idle drain (high battery usage by system), because we're forcing tasks that can only run if certain conditions are met, but also sometimes happen unexpectedly while the phone is idle, causing huge idle drain usage. 
 
 ### How to:
 
@@ -56,6 +53,9 @@ What I found fixed the issue was to manually run dex2oat on everything after it 
 `adb shell cmd package bg-dexopt-job`
 
 If you don't have adb installed go [here](https://developer.android.com/studio/releases/platform-tools)
+
+# [Download Script](https://github.com/KelvinCrag/Optimizer/releases) [![Github All Releases](https://img.shields.io/github/downloads/kelvincrag/optimizer/total.svg)]()
+ 
 
 ## F.A.Q
 1. How do I install the script in **linux and MacOS**?
@@ -88,11 +88,11 @@ If you're concerned you can run that command a second time and the error should 
 Note : You can also do this optimization; after clean flash, after complete restore app from titanium backup/migrate or from Google (Play Store).
 
 
-### Curious what the code does? See here: https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe
+### Curious what the code does? See here: [https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe](https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe)
 
 credit : 
 - tomascus @ xda-developers
 - TomHenson @ mi community
-- anupritaisno1 @ https://forums.oneplus.com/threads/charging-battery-performance-caches-and-battery-calibration-myths-busted.993896/
+- anupritaisno1 @ oneplus community
 
 
