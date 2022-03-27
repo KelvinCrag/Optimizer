@@ -1,7 +1,7 @@
-# Optimizer
+![Banner](https://telegra.ph/file/038f8df9ac34a005f1f31.jpg)
 Fix your android battery drain by optimization.
 
-## Summary
+# About Optimizer
 When you updated or flashed your device, you probably used up a lot of battery power in the first three or four days. The Android system is the first in the list of systems consumed and has 30–40% of the use! This guide will help to eliminate this problem. Starting with Android version 6 and below, you should have seen a message from the system saying "Optimizing app xx from xx" when you flashed or installed new apps.
 
 You can often watch how the Android system consumes energy more than other applications. This is the result of not allowing the system to optimize.
@@ -32,6 +32,7 @@ And it seems to improve idle drain (high battery usage by the system) because we
 `su -c "cmd package bg-dexopt-job"`
 
 2. Just wait until it is completed by itself (on Android 10+ will display "Success", on Nougat-Pie it will bring just a new prompt line)
+![Screenshot](https://telegra.ph/file/7e75e1c0165d99efa87eb.jpg)
 
 ## If you don't have root:
 
@@ -57,7 +58,7 @@ If you don't have adb installed go [here](https://developer.android.com/studio/r
 > You don't. Just manually run the command above in the terminal.
 
 2. How do I install the script in **windows**?
-> Simple. Put the script 'optimizer_script.bat' from [releases](https://github.com/KelvinCrag/Optimizer/releases) in the same folder with your installed adb, by default is supposed to be c:/adb/platform-tools
+> Simple. Put the script 'optimizer_script.bat' from [releases](https://github.com/KelvinCrag/Optimizer/releases) in the same folder with your installed adb, by default it's c:/adb/platform-tools, then double click to run the script.
 
 3. If I can run the command manually why should I still download the script you made?
 > Well, it saves your stress. Instead of typing the command and avoiding misspelt command just run my script.
@@ -86,8 +87,6 @@ Note: You can also do this optimization; after clean flash, after complete resto
 ### Curious what the code does? See here: [https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe](https://android.googlesource.com/platform/frameworks/base.git/+/f7edab63d9358b9a4e0dbec3243f6db9f50a2bbe)
 
 credit : 
-- tomascus @ xda-developers
-- TomHenson @ mi community
-- anupritaisno1 @ oneplus community
-
+- Android communities
+- Mobiosolutions for banner inspiration 
 
